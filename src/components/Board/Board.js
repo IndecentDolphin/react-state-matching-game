@@ -9,7 +9,7 @@ const Board = (props) => {
   };
 
   const newTiles = props.tiles.map((tile) => {
-    return <Tile {...tile} />;
+    return <Tile {...tile} handleTileClicked={props.handleTileClicked} />;
   });
 
   return (
